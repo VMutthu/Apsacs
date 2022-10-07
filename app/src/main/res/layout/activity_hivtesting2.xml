@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HIVTesting2Activity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.Ictc/Art Information"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiv Confirmatory Date : Dd/Mm/Yr"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_HIV_CD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+                android:hint="Enter Hiv confirematory date"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiv Positive Pid No"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_HIV_p_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+
+                android:hint="Enter Hiv positive no"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name Of The Ictc Centre"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_ICTC_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+                android:hint="Enter Ictc Centre"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiv Remarks"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_HIV_Remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+
+                android:hint="Enter Hiv Remarks"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.Pre Art Registration Date"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_PARD"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-12-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.Pre Art Registration No"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_PARN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:hint="Enter Pre Art no"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Cd4 Count At The Time Of Pre Art Registration"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_CD4_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:hint="Enter Registration"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.Pre Art Remark"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_Pre_Art_Remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter Remark"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.Art Centre Name (Registered / Nodal Centre Name)"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_ACN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Select Center Name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8.Art Registration Date"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_ARD"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-02-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.Art Registration No"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_ARN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter registration no"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Art Initiated Date"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_AID"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11.Art Regimen"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_AR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter regimen"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cd4 Test Details"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest Cd4 Testing Date"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_CD4_testing_date"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest Cd4 Count"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_latest_cd4_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter cd4 count"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Viral Load Details"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Time Viral Load Testing"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_FTVLT"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Time Viral Load Count"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_FTVLC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter viral count"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest Viral Load Testing Date"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_LVLTD"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Latest Viral Load Count"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_LVLC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter viral count"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Art Adherence Details (Mention The Date Of Art Drug Received)"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_AAD"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Second Line Art"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Second Line Art Initiated"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_gender"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_yes"
+                    android:buttonTint="@color/cyan_blue"
+                    android:text="Yes"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_no"
+                    android:padding="10dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="18sp"
+                    android:text="No"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/cyan_blue"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Art Regimen (Second Line)"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/ET_ART_R"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:background="@drawable/border_grey"
+                android:fontFamily="@font/robotoregular"
+
+                android:hint="Enter regimen"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Art Follow-Up Remarks"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_AFUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="EnterART follow-up remarks"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigation"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gap For Navigation Identified"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_GFNI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="EnterART follow-up remarks"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contacted For Navigation"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_CFN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="EnterContacted for Navigation"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Linked On Art"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_DOLOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter Date of Linked on ART"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date Of Retained In The Treatment"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_DOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="EnterDate of Retained in the Treatments"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tb Referral &amp; Testing"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="20sp"
+                android:textColor="@color/cyan_blue"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tb Tested"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_TB_testing"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tb Referred"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_TB_Referred"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tb Treated"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_TB_Treated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:fontFamily="@font/robotoregular"
+                
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="10-2-2022"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="On Dot"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_On_DOT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ftd_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue"
+                android:fontFamily="@font/robotoregular"
+                android:text="SUBMIT"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

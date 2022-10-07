@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".AddBeneficiaryActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="District"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:text="Mandal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TV_district"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey"
+                android:hint="Select District"/>
+            <TextView
+                android:id="@+id/TV_mandal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_grey"
+                android:padding="10dp"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:hint="Select Mandal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotomedium"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Secretariat"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TV_Secretariat"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey"
+                android:hint="EnterSecretariat"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/blue_ll_brdr">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/ic_icon_ionic_md_person_add"
+                android:drawablePadding="30dp"
+                android:fontFamily="@font/robotoregular"
+                android:padding="10dp"
+                android:text="Beneficiary Details"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp">
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Name of HRG" />
+
+                <TextView style="@style/semcolon" />
+
+                <EditText
+                    android:id="@+id/ET_HRG_Name"
+                    style="@style/etRobReg"
+                    android:background="@drawable/rounded_grey"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                    android:hint="Enter Name"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Age" />
+
+                <TextView style="@style/semcolon" />
+
+                <EditText
+                    android:id="@+id/ET_HRG_Age"
+                    style="@style/etRobReg"
+                    android:background="@drawable/rounded_grey"
+                    android:hint="Enter Age"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Gender" />
+
+                <TextView style="@style/semcolon" />
+
+                <TextView
+                    android:id="@+id/TV_HRG_Gender"
+                    style="@style/etRobReg"
+                    android:hint="Select Gender"
+                    android:background="@drawable/rounded_grey"
+                    android:drawableEnd="@drawable/ic_polygon_31" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="UID" />
+
+                <TextView style="@style/semcolon" />
+
+                <EditText
+                    android:id="@+id/ET_HRG_UID"
+                    style="@style/etRobReg"
+                    android:background="@drawable/rounded_grey"
+                    android:hint="Enter UID"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Marital Status" />
+
+                <TextView style="@style/semcolon" />
+
+                <TextView
+                    android:id="@+id/TV_Martial_Status"
+                    style="@style/etRobReg"
+                    android:hint="Select Gender"
+                    android:background="@drawable/rounded_grey"
+                    android:drawableEnd="@drawable/ic_polygon_31" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="whether having a spouse" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_spouse"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/cyan_blue"
+                        android:fontFamily="@font/robotoregular"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Yes"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/radio_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:buttonTint="@color/cyan_blue"
+                        android:fontFamily="@font/robotoregular"
+                        android:padding="10dp"
+                        android:text="No"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="HRG TI ID No" />
+
+                <TextView style="@style/semcolon" />
+
+                <EditText
+                    android:id="@+id/ET_HRG_TI_ID"
+                    style="@style/etRobReg"
+                    android:background="@drawable/rounded_grey"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                    android:hint="Enter TI ID"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Soch UID Number" />
+
+                <TextView style="@style/semcolon" />
+
+                <EditText
+                    android:id="@+id/ET_Soch_UID"
+                    style="@style/etRobReg"
+                    android:inputType="text"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                    android:maxLength="12"
+                    android:hint="Enter the UID"
+                    android:background="@drawable/rounded_grey" />
+
+            </LinearLayout>
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="HRG Contact Number" />
+
+            <EditText
+                android:id="@+id/ET_HRG_mobile"
+                style="@style/etRobReg"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_grey"
+                android:inputType="number"
+                android:maxLength="10"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Subcatagory of Community Members"/>
+
+            <TextView
+                android:id="@+id/TV_Subcatagory_community"
+                style="@style/etRobReg"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey" />
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Name of HotSpot" />
+            <TextView
+                android:id="@+id/TV_HRG_Hostspot_Name"
+                style="@style/etRobReg"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey" />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                style="@style/HorizontalThemeLayoutInputs">
+
+                <TextView
+                    style="@style/tvrobmed16"
+                    android:text="Typology" />
+
+                <TextView style="@style/semcolon" />
+
+                <TextView
+                    android:id="@+id/TV_Typology"
+                    style="@style/etRobReg"
+                    android:hint="Select Typology"
+                    android:background="@drawable/rounded_grey"
+                    android:drawableEnd="@drawable/ic_polygon_31" />
+
+            </LinearLayout>
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Regular partner" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_regular"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_R_yes"
+                    android:buttonTint="@color/cyan_blue"
+                    android:text="Yes"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_R_no"
+                    android:padding="10dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="18sp"
+                    android:text="No"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/cyan_blue"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Employment Status" />
+            <TextView
+                android:id="@+id/TV_EMP_status"
+                style="@style/etRobReg"
+                android:layout_width="300dp"
+                android:layout_marginTop="5dp"
+                android:hint="Select"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey" />
+            <TextView
+                style="@style/tvrobmed16"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="Education Level" />
+            <TextView
+                android:id="@+id/TV_EDU_level"
+                style="@style/etRobReg"
+                android:layout_width="300dp"
+                android:hint="Select"
+                android:layout_marginTop="5dp"
+                android:drawableEnd="@drawable/ic_polygon_31"
+                android:background="@drawable/rounded_grey" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ftd_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_blue"
+            android:fontFamily="@font/robotoregular"
+            android:text="SUBMIT"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

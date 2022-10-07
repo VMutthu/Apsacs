@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeneficiaryScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginBottom="20dp">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/ET_Soch_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search Soch id"
+                        android:padding="10dp"
+                        android:layout_weight=".1"
+                        android:background="@drawable/profile_edit_e"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/BT_search"
+                        android:layout_weight=".9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawableTint="@color/white"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/profile_edit_b"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/TV_add_Beneficiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cyan_blue"
+                    android:paddingLeft="5dp"
+                    android:gravity="left|center"
+                    android:drawableLeft="@drawable/ic_add_circle"
+                    android:fontFamily="@font/robotomedium"
+                    android:text="Add The Beneficiary"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RV_Beneficiary_list"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardSelection"
+    app:cardBackgroundColor="@color/shade_blue"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <!--//LL4-->
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Tvname"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <CheckBox
+            android:id="@+id/checked"
+            style="@android:style/Widget.CompoundButton.CheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/nunito"
+            android:textSize="14sp"
+            android:visibility="gone">
+        </CheckBox>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

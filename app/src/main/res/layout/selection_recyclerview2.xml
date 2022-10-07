@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/TvMain"
+        android:text="SELECT ONE"
+        android:gravity="center"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/TvOK"
+        android:text="Ok"
+        android:gravity="center"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_blue"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/EtSearch"
+        android:background="@drawable/rounded_grey"
+        android:fontFamily="@font/nunito"
+        android:paddingLeft="15dp"
+        android:textSize="14dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/quantum_grey700"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter search word"
+        android:maxLength="30"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_Selection"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"/>
+
+</LinearLayout>

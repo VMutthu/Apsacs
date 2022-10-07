@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiskAssementActivity"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Sexual acts reported per day at the time of"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_HIV_confirematory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter Hiv confirematory date"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.Number of years in sex work?"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/ET_sexwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm ABCDFEGHIJKLMNOPURSTUVWXYZ"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Enter Years is sex work"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.Avrge injecting acts per week(app for only IDU's)? "
+                android:fontFamily="@font/robotoregular"
+                 
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_AIAPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Select Hiv confirematory date"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.when s/he can be met in the site(day)?"
+                android:fontFamily="@font/robotoregular"
+                 
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="day"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/TV_site_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                 
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Select Hiv confirematory date"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/TV_site_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Select Hiv confirematory time"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Weather Consumes Alcohol?(weekley)"
+                android:fontFamily="@font/robotoregular"
+                 
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <RadioGroup
+                android:id="@+id/RG_WCA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/RB_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoregular"/>
+                <RadioButton
+                    android:id="@+id/RB_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoregular"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.whether dropped out (not in contact with project services for last 6 monts)?"
+                android:fontFamily="@font/robotoregular"
+                 
+                android:textColor="@color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/TV_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:hint="Select Hiv confirematory date"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ftd_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_blue"
+                android:fontFamily="@font/robotoregular"
+                android:text="SUBMIT"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

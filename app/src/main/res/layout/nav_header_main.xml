@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LLTotalDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LLNavUser"
+        android:orientation="vertical"
+        android:background="@mipmap/nav_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/TvUserNameNavi"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textSize="20dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/TvUserNaviMobile"
+            android:layout_below="@+id/TvUserNameNavi"
+            android:fontFamily="@font/nunito"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:text="728xxxxxxx"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <ImageView
+            android:layout_below="@+id/TvUserNaviMobile"
+            android:id="@+id/ImgChgPwd"
+            android:visibility="gone"
+            android:background="@drawable/ic_edit"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"></ImageView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LL_Profile"
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:src="@mipmap/rapid"
+            android:scaleType="centerInside"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_height="20dp"></ImageView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:text="Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/quantum_grey300"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+</LinearLayout>

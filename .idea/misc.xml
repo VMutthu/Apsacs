@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/blue_ll_brdr.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/border_black.xml" value="0.2075" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/card_background.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/circule_layout.xml" value="0.1905" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/ic_polygon_31.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/rounded_blue.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/rounded_green.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/rounded_grey.xml" value="0.2075" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/rounded_lite_red.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/drawable/rounded_red.xml" value="0.1775" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/font/nunito.xml" value="0.23020833333333332" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_add_beneficiary.xml" value="0.27505827505827507" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_beneficiary_screen.xml" value="0.33" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_clinical_services.xml" value="0.33" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_clinical_services2.xml" value="0.1956521739130435" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_hivtesting.xml" value="0.33" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_hivtesting2.xml" value="0.25" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_risk_assactivity.xml" value="0.1956521739130435" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_risk_assement.xml" value="0.25" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_screening.xml" value="0.1956521739130435" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/beneficiary_item.xml" value="0.5" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/card_selection3.xml" value="0.17074275362318841" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/forgotpassword.xml" value="0.67" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/nav_header_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/progress_layout.xml" value="0.17074275362318841" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/screening_layout.xml" value="0.33" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/selection_recyclerview2.xml" value="0.2" />
+        <entry key="..\:/androidworkspace/Apsacs/app/src/main/res/layout/toolbar_layout.xml" value="0.17074275362318841" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
